@@ -2,7 +2,7 @@ import {Injectable, NgZone} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {Observer} from 'rxjs/Observer';
 
-import {SebmGoogleMapPolygon} from '../../directives/google-map-polygon';
+import {SebmGoogleMapPolygon} from '../../directives/polygon';
 import {GoogleMapsAPIWrapper} from '../google-maps-api-wrapper';
 import {Polygon} from '../google-maps-types';
 

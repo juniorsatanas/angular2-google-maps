@@ -1,17 +1,20 @@
 {
-  "name": "angular2-google-maps",
+  "name": "@angular-google-maps/core",
   "version": "0.17.0",
-  "description": "Angular 2 components for Google Maps",
+  "description": "Angular 2+ components for Google Maps",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SebastianM/angular2-google-maps.git"
+    "url": "https://github.com/SebastianM/angular-google-maps.git"
   },
   "keywords": [
+    "angular",
     "angular2",
+    "ng",
     "google-maps",
     "ng2",
-    "angular",
-    "maps"
+    "maps",
+    "google",
+    "gmaps"
   ],
   "scripts": {
     "clean": "rimraf dist && rimraf .tmp && mkdir dist && mkdir .tmp && rimraf 'src/**/*.ngfactory.ts'",
@@ -35,7 +38,7 @@
   "author": "Sebastian Müller <info@sebastian-mueller.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SebastianM/angular2-google-maps/issues"
+    "url": "https://github.com/SebastianM/ng-google-maps/issues"
   },
   "homepage": "https://angular-maps.com",
   "dependencies": {

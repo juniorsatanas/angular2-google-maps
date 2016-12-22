@@ -10,19 +10,18 @@ import {PolygonManager} from '../services/managers/polygon-manager';
  * ### Example
  * ```typescript
  * import { Component } from '@angular/core';
- * import { SebmGoogleMap, SebmGooglePolygon, LatLngLiteral } from 'angular2-maps/core';
  *
  * @Component({
  *  selector: 'my-map-cmp',
  *  styles: [`
- *    .semb-map-container {
+ *    .agm-map-container {
  *      height: 300px;
  *    }
  * `],
  *  template: `
  *    <semb-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <semb-map-polygon [paths]="paths">
- *      </semb-map-polygon>
+ *      <agm-polygon [paths]="paths">
+ *      </agm-polygon>
  *    </semb-map>
  *  `
  * })

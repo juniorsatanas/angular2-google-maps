@@ -1,7 +1,7 @@
 import {NgZone} from '@angular/core';
 import {TestBed, inject} from '@angular/core/testing';
 
-import {SebmGoogleMapPolygon} from '../../directives/google-map-polygon';
+import {SebmGoogleMapPolygon} from '../../directives/polygon';
 import {GoogleMapsAPIWrapper} from '../google-maps-api-wrapper';
 import {Polygon} from '../google-maps-types';
 import {PolygonManager} from './polygon-manager';

@@ -4,7 +4,7 @@ import {Subscription} from 'rxjs/Subscription';
 import {PolyMouseEvent} from '../services/google-maps-types';
 import {PolylineManager} from '../services/managers/polyline-manager';
 
-import {SebmGoogleMapPolylinePoint} from './google-map-polyline-point';
+import {SebmGoogleMapPolylinePoint} from './polyline-point';
 
 let polylineId = 0;
 /**
@@ -12,27 +12,24 @@ let polylineId = 0;
  *
  * ### Example
  * ```typescript
- * import { Component } from 'angular2/core';
- * import { SebmGoogleMap, SebmGooglePolyline, SebmGooglePolylinePoint } from
- * 'angular2-google-maps/core';
+ * import { Component } from '@angular/core';
  *
  * @Component({
  *  selector: 'my-map-cmp',
- *  directives: [SebmGoogleMap, SebmGooglePolyline, SebmGooglePolylinePoint],
  *  styles: [`
- *    .sebm-google-map-container {
+ *    .agm-map-container {
  *      height: 300px;
  *    }
  * `],
  *  template: `
- *    <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
- *      <sebm-google-map-polyline>
- *          <sebm-google-map-polyline-point [latitude]="latA" [longitude]="lngA">
- *          </sebm-google-map-polyline-point>
- *          <sebm-google-map-polyline-point [latitude]="latB" [longitude]="lngB">
- *          </sebm-google-map-polyline-point>
- *      </sebm-google-map-polyline>
- *    </sebm-google-map>
+ *    <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+ *      <agm-polyline>
+ *          <agm-polyline-point [latitude]="latA" [longitude]="lngA">
+ *          </agm-polyline-point>
+ *          <agm-polyline-point [latitude]="latB" [longitude]="lngB">
+ *          </agm-polyline-point>
+ *      </agm-polyline>
+ *    </agm-map>
  *  `
  * })
  * ```

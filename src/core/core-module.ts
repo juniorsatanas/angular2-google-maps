@@ -1,13 +1,13 @@
 import {ModuleWithProviders, NgModule} from '@angular/core';
 
-import {SebmGoogleMapKmlLayer} from './directives/google-map-kml-layer';
-import {SebmGoogleMap} from './directives/google-map';
-import {SebmGoogleMapCircle} from './directives/google-map-circle';
-import {SebmGoogleMapInfoWindow} from './directives/google-map-info-window';
-import {SebmGoogleMapMarker} from './directives/google-map-marker';
-import {SebmGoogleMapPolygon} from './directives/google-map-polygon';
-import {SebmGoogleMapPolyline} from './directives/google-map-polyline';
-import {SebmGoogleMapPolylinePoint} from './directives/google-map-polyline-point';
+import {AgmKmlLayer} from './directives/kml-layer';
+import {AgmMap} from './directives/map';
+import {AgmCircle} from './directives/circle';
+import {AgmInfoWindow} from './directives/info-window';
+import {AgmMarker} from './directives/marker';
+import {SebmGoogleMapPolygon} from './directives/polygon';
+import {SebmGoogleMapPolyline} from './directives/polyline';
+import {SebmGoogleMapPolylinePoint} from './directives/polyline-point';
 import {LazyMapsAPILoader} from './services/maps-api-loader/lazy-maps-api-loader';
 import {LAZY_MAPS_API_CONFIG, LazyMapsAPILoaderConfigLiteral} from './services/maps-api-loader/lazy-maps-api-loader';
 import {MapsAPILoader} from './services/maps-api-loader/maps-api-loader';
@@ -18,8 +18,8 @@ import {BROWSER_GLOBALS_PROVIDERS} from './utils/browser-globals';
  */
 export function coreDirectives() {
   return [
-    SebmGoogleMap, SebmGoogleMapMarker, SebmGoogleMapInfoWindow, SebmGoogleMapCircle,
-    SebmGoogleMapPolygon, SebmGoogleMapPolyline, SebmGoogleMapPolylinePoint, SebmGoogleMapKmlLayer
+    AgmMap, AgmMarker, AgmInfoWindow, AgmCircle,
+    SebmGoogleMapPolygon, SebmGoogleMapPolyline, SebmGoogleMapPolylinePoint, AgmKmlLayer
   ];
 };
 

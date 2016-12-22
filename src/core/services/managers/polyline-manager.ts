@@ -2,8 +2,8 @@ import {Injectable, NgZone} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import {Observer} from 'rxjs/Observer';
 
-import {SebmGoogleMapPolyline} from '../../directives/google-map-polyline';
-import {SebmGoogleMapPolylinePoint} from '../../directives/google-map-polyline-point';
+import {SebmGoogleMapPolyline} from '../../directives/polyline';
+import {SebmGoogleMapPolylinePoint} from '../../directives/polyline-point';
 import {GoogleMapsAPIWrapper} from '../google-maps-api-wrapper';
 import {LatLngLiteral, Polyline} from '../google-maps-types';
 
